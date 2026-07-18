@@ -130,7 +130,7 @@ lazy_static::lazy_static! {
         //使用D3D渲染
         map.insert("allow-d3d-render".to_string(), "Y".to_string());
         //启动时检查软件更新
-        map.insert("enable-check-update".to_string(), "N".to_string());
+        map.insert("enable-check-update".to_string(), "Y".to_string());
         //自动更新
         map.insert("allow-auto-update".to_string(), "N".to_string());
         //启用UDP打洞
@@ -165,11 +165,11 @@ lazy_static::lazy_static! {
         //隐藏代理设置选项
         map.insert("hide-proxy-settings".to_string(), "N".to_string());
         //隐藏服务设置选项
-        map.insert("hide-server-settings".to_string(), "N".to_string());
+        map.insert("hide-server-settings".to_string(), "Y".to_string());
         //隐藏安全设置选项
         map.insert("hide-security-settings".to_string(), "N".to_string());
         //隐藏网络设置选项
-        map.insert("hide-network-settings".to_string(), "N".to_string());
+        map.insert("hide-network-settings".to_string(), "Y".to_string());
         RwLock::new(map)
     };
 }
