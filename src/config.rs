@@ -160,8 +160,6 @@ lazy_static::lazy_static! {
             "default-connect-password".to_string(), 
             option_env!("DEFAULT_PASSWORD").unwrap_or("").into()
         );
-        //隐藏设置选项
-        map.insert("hide-server-settings".to_string(),"Y".to_string());
         //隐藏远程打印设置选项
         map.insert("hide-remote-printer-settings".to_string(), "Y".to_string());
         //隐藏代理设置选项
